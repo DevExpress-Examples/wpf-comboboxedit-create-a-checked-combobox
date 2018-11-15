@@ -1,3 +1,12 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [Customer.cs](./CS/ComboBoxEdit_CreatingCheckedComboBox/Customer.cs) (VB: [Customer.vb](./VB/ComboBoxEdit_CreatingCheckedComboBox/Customer.vb))
+* [SelectedItemsConverter.cs](./CS/ComboBoxEdit_CreatingCheckedComboBox/SelectedItemsConverter.cs) (VB: [SelectedItemsConverter.vb](./VB/ComboBoxEdit_CreatingCheckedComboBox/SelectedItemsConverter.vb))
+* [MyViewModel.cs](./CS/ComboBoxEdit_CreatingCheckedComboBox/ViewModels/MyViewModel.cs) (VB: [MyViewModel.vb](./VB/ComboBoxEdit_CreatingCheckedComboBox/ViewModels/MyViewModel.vb))
+* **[Window1.xaml](./CS/ComboBoxEdit_CreatingCheckedComboBox/Window1.xaml) (VB: [Window1.xaml](./VB/ComboBoxEdit_CreatingCheckedComboBox/Window1.xaml))**
+* [Window1.xaml.cs](./CS/ComboBoxEdit_CreatingCheckedComboBox/Window1.xaml.cs) (VB: [Window1.xaml](./VB/ComboBoxEdit_CreatingCheckedComboBox/Window1.xaml))
+<!-- default file list end -->
 # How to Create a Checked ComboBox
 
 

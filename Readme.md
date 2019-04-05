@@ -2,7 +2,7 @@
 *Files to look at*:
 
 * [Window1.xaml](./CS/ComboBoxEdit_CreatingCheckedComboBox/Window1.xaml) (VB: [Window1.xaml](./VB/ComboBoxEdit_CreatingCheckedComboBox/Window1.xaml))
-* [Window1.xaml.cs](./CS/ComboBoxEdit_CreatingCheckedComboBox/Window1.xaml.cs) (VB: [Window1.xaml](./VB/ComboBoxEdit_CreatingCheckedComboBox/Window1.xaml))
+* [Window1.xaml.cs](./CS/ComboBoxEdit_CreatingCheckedComboBox/Window1.xaml.cs) (VB: [Window1.xaml.vb](./VB/ComboBoxEdit_CreatingCheckedComboBox/Window1.xaml.vb))
 <!-- default file list end -->
 # How to Create a Checked ComboBox
 

@@ -16,7 +16,7 @@ This example demonstrates how to create a checked combo box. To do this, set the
 </dxe:ComboBoxEdit.StyleSettings>
 ```
 
-When you enable multiple selection in the [ComboBoxEdit](https://docs.devexpress.com/WPF/DevExpress.Xpf.Editors.ComboBoxEdit), its [EditValue](https://docs.devexpress.devx/WPF/DevExpress.Xpf.Editors.BaseEdit.EditValue) property must contain an object of the `List<object>` type. In this example, we use a custom converter that converts the collection of selected `Customers` to `List<object>` and back.
+When you enable multiple selection in the [ComboBoxEdit](https://docs.devexpress.com/WPF/DevExpress.Xpf.Editors.ComboBoxEdit), its [EditValue](https://docs.devexpress.devx/WPF/DevExpress.Xpf.Editors.BaseEdit.EditValue) property must contain an object of the `List<object>` type. In this example, the `SelectedItemsConverter` converts the collection of selected `Customers` to `List<object>` and back.
 
 ## Files to Review
 

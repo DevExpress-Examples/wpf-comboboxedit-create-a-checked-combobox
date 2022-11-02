@@ -3,21 +3,12 @@
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/E1971)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
-<!-- default file list -->
-*Files to look at*:
 
-* [Customer.cs](./CS/ComboBoxEdit_CreatingCheckedComboBox/Customer.cs) (VB: [Customer.vb](./VB/ComboBoxEdit_CreatingCheckedComboBox/Customer.vb))
-* [SelectedItemsConverter.cs](./CS/ComboBoxEdit_CreatingCheckedComboBox/SelectedItemsConverter.cs) (VB: [SelectedItemsConverter.vb](./VB/ComboBoxEdit_CreatingCheckedComboBox/SelectedItemsConverter.vb))
-* [MyViewModel.cs](./CS/ComboBoxEdit_CreatingCheckedComboBox/ViewModels/MyViewModel.cs) (VB: [MyViewModel.vb](./VB/ComboBoxEdit_CreatingCheckedComboBox/ViewModels/MyViewModel.vb))
-* **[Window1.xaml](./CS/ComboBoxEdit_CreatingCheckedComboBox/Window1.xaml) (VB: [Window1.xaml](./VB/ComboBoxEdit_CreatingCheckedComboBox/Window1.xaml))**
-* [Window1.xaml.cs](./CS/ComboBoxEdit_CreatingCheckedComboBox/Window1.xaml.cs) (VB: [Window1.xaml](./VB/ComboBoxEdit_CreatingCheckedComboBox/Window1.xaml))
-<!-- default file list end -->
-# How to Create a Checked ComboBox
+# WPF ComboBoxEdit - Create a Checked ComboBox
 
+This example demonstrates how to create a checked combo box. To do this, set the editor's [StyleSettings](https://docs.devexpress.com/WPF/DevExpress.Xpf.Editors.BaseEdit.StyleSettings) property to [CheckedComboBoxStyleSettings](https://docs.devexpress.com/WPF/DevExpress.Xpf.Editors.CheckedComboBoxStyleSettings):
 
-<p>The following example demonstrates how to create a checked combo box.</p>
-<p>To enable this mode, set the editor's <a href="https://documentation.devexpress.com/WPF/DevExpress.Xpf.Editors.BaseEdit.StyleSettings.property"><u>StyleSettings</u></a> property to <a href="http://documentation.devexpress.com/#WPF/clsDevExpressXpfEditorsCheckedComboBoxStyleSettingstopic"><u>CheckedComboBoxStyleSettings</u></a>:</p>
-
+![image](https://user-images.githubusercontent.com/65009440/199476164-4545c7c8-1c45-4b95-912b-edbe83434b01.png)
 
 ```xaml
 <dxe:ComboBoxEdit.StyleSettings>
@@ -25,9 +16,23 @@
 </dxe:ComboBoxEdit.StyleSettings>
 ```
 
+When you enable multiple selection in the [ComboBoxEdit](https://docs.devexpress.com/WPF/DevExpress.Xpf.Editors.ComboBoxEdit), its [EditValue](https://docs.devexpress.devx/WPF/DevExpress.Xpf.Editors.BaseEdit.EditValue) property must contain an object of the `List<object>` type. In this example, we use a custom converter that converts the collection of selected `Customers` to `List<object>` and back.
 
-<p><strong>Note </strong>that ComboBoxEdit supports several operation modes which are available through the <a href="https://documentation.devexpress.com/WPF/DevExpress.Xpf.Editors.BaseEdit.StyleSettings.property">BaseEdit.StyleSettings</a> property. Please see the <a href="https://documentation.devexpress.com/WPF/116528/Controls-and-Libraries/Data-Editors/Common-Features/Editor-Operation-Modes/ComboBoxEdit">ComboBoxEdit</a> help topic to see the complete list.<br>For example, use <a href="http://documentation.devexpress.com/#WPF/clsDevExpressXpfEditorsRadioComboBoxStyleSettingstopic"><u>RadioComboBoxStyleSettings</u></a> to create a radio button list as demonstrated in the <a href="https://www.devexpress.com/Support/Center/p/E1982">E1982: How to Apply Style Settings to the ComboBoxEdit</a> example.</p>
+## Files to Review
 
-<br/>
+* [Customer.cs](./CS/ComboBoxEdit_CreatingCheckedComboBox/Customer.cs) (VB: [Customer.vb](./VB/ComboBoxEdit_CreatingCheckedComboBox/Customer.vb))
+* [SelectedItemsConverter.cs](./CS/ComboBoxEdit_CreatingCheckedComboBox/SelectedItemsConverter.cs) (VB: [SelectedItemsConverter.vb](./VB/ComboBoxEdit_CreatingCheckedComboBox/SelectedItemsConverter.vb))
+* [MyViewModel.cs](./CS/ComboBoxEdit_CreatingCheckedComboBox/ViewModels/MyViewModel.cs) (VB: [MyViewModel.vb](./VB/ComboBoxEdit_CreatingCheckedComboBox/ViewModels/MyViewModel.vb))
+* [Window1.xaml](./CS/ComboBoxEdit_CreatingCheckedComboBox/Window1.xaml) (VB: [Window1.xaml](./VB/ComboBoxEdit_CreatingCheckedComboBox/Window1.xaml))
 
+## Documentation
 
+* [ComboBoxEdit](https://docs.devexpress.com/WPF/DevExpress.Xpf.Editors.ComboBoxEdit)
+* [ComboBoxEdit Operation Modes](https://docs.devexpress.com/WPF/116528/controls-and-libraries/data-editors/common-features/editor-operation-modes/comboboxedit)
+* [How to implement multi-select in DevExpress WPF Data Editors (ComboBoxEdit, LookUpEdit, ListBoxEdit)](https://supportcenter.devexpress.com/ticket/details/t889444/how-to-implement-multi-select-when-using-devexpress-wpf-data-editors-comboboxedit)
+
+## More Examples
+
+* [How to Apply Style Settings to the ComboBoxEdit](https://github.com/DevExpress-Examples/how-to-apply-style-settings-to-the-comboboxedit-e1982)
+* [How to create ListBoxEdit, CheckedListBoxEdit and RadioListBoxEdit](https://github.com/DevExpress-Examples/how-to-create-listboxedit-checkedlistboxedit-and-radiolistboxedit-e3973)
+* [WPF Data Grid - Assign a ComboBox Editor to a Column](https://github.com/DevExpress-Examples/wpf-data-grid-assign-combobox-editor-to-column)
